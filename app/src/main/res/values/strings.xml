@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gemastik</string>
+    <string name="login_sebagai_user">Login Sebagai User</string>
+    <string name="login_sebagai_admin">Login Sebagai Admin</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_user">Login User</string>
+    <string name="login">Login</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="buat_akun_baru">Buat Akun Baru</string>
+    <string name="register_user">Register User</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">Sign In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">Ini isinya apa nes? ente buat prototype nya yaks</string>
+</resources>
