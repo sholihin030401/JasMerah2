@@ -1,19 +1,29 @@
 <resources>
     <string name="app_name">Gemastik</string>
-    <string name="login_sebagai_user">Login Sebagai User</string>
-    <string name="login_sebagai_admin">Login Sebagai Admin</string>
-    <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="login_user">Login User</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username_or_email">Username or Email</string>
     <string name="login">Login</string>
-    <string name="lupa_password">Lupa Password</string>
-    <string name="buat_akun_baru">Buat Akun Baru</string>
-    <string name="register_user">Register User</string>
-    <string name="username">Username</string>
-    <string name="confirm_password">Confirm Password</string>
     <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="selamat_datang_di_app_bantuan_id">Selamat Datang di\nApp Bantu.in</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="create_new_account">Create New Account</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text">Ini isinya apa nes? ente buat prototype nya yaks</string>
+    <string name="search">Search</string>
+    <string name="selamat_datang_username">Selamat Datang,\nUsername</string>
+    <string name="bantu_donasi">Bantu\nDonasi</string>
+    <string name="bantu_belajar">Bantu\nBelajar</string>
+    <string name="bantu_kerja">Bantu\nKerja</string>
+    <string name="_62_85766689697">+62 85766689697</string>
+    <string name="username_gmail_com">username@gmail.com</string>
+    <string name="aktivitas_saya">Aktivitas Saya</string>
+    <string name="belajar">Belajar</string>
+    <string name="donasi">Donasi</string>
+    <string name="kerja">Kerja</string>
 </resources>

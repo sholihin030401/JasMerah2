@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin.DaftarAdminActivity"></activity>
-        <activity android:name=".admin.RegistAdminActivity" />
-        <activity android:name=".admin.LoginAdminActivity" />
-        <activity android:name=".user.UserActivity" />
-        <activity android:name=".user.RegistUserActivity" />
-        <activity android:name=".user.LoginUserActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".donasi.DonasiActivity"></activity>
+        <activity android:name=".verification.VerifOtpActivity" />
+        <activity android:name=".verification.NoPhoneActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:noHistory="true" />
+        <activity android:name=".verification.SignUpActivity" />
+        <activity android:name=".verification.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,40 +1,54 @@
 package com.project.ichwan.gemastik;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Toast;
 
-import com.project.ichwan.gemastik.admin.LoginAdminActivity;
-import com.project.ichwan.gemastik.user.LoginUserActivity;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import eu.long1.spacetablayout.SpaceTabLayout;
+
+public class MainActivity extends AppCompatActivity {
+
+    SpaceTabLayout tabLayout;
+
+    private long backPressed;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CardView cvuser = findViewById(R.id.cvuser);
-        CardView cvadmin = findViewById(R.id.cvadmin);
+        ViewPager viewPager = findViewById(R.id.viewpager);
+        final CoordinatorLayout coordinatorLayout = findViewById(R.id.activity_main);
+        tabLayout = findViewById(R.id.tablayout);
 
-        cvuser.setOnClickListener(this);
-        cvadmin.setOnClickListener(this);
+        List<Fragment> fragmentList = new ArrayList<>();
+        fragmentList.add(new HomeFragment());
+        fragmentList.add(new ChatFragment());
+        fragmentList.add(new ProfileFragment());
+
+        tabLayout.initialize(viewPager,getSupportFragmentManager(),fragmentList,savedInstanceState);
+
     }
 
     @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.cvuser:
-                Intent user = new Intent(this, LoginUserActivity.class);
-                startActivity(user);
-                break;
-            case R.id.cvadmin:
-                Intent admin = new Intent(this, LoginAdminActivity.class);
-                startActivity(admin);
-                break;
+    public void onBackPressed() {
+        if (backPressed + 3000 > System.currentTimeMillis()){
+            backToast.cancel();
+            super.onBackPressed();
+            return;
         }
+        else {
+            backToast = Toast.makeText(getBaseContext(),"Tekan sekali lagi untuk keluar", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressed = System.currentTimeMillis();
     }
 }

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txwelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selamat_datang_username"
+                android:layout_margin="20dp"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="22sp"/>
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:hint="@string/search"
+                android:fontFamily="@font/poppins_regular"
+                android:drawableEnd="@drawable/ic_search_black_24dp"
+                android:background="@drawable/rectangle_search"
+                android:padding="8dp"
+                android:layout_below="@id/txwelcome"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalsv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search"
+                android:scrollIndicators="none"
+                tools:targetApi="m">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/slideimage1"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#00CCB0"/>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/slideimage2"
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#00CCB0"/>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/slideimage3"
+                        android:layout_width="350dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="#00CCB0"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horizontalsv"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                <ImageView
+                    android:id="@+id/imgdonate"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_donate_white"/>
+
+                    <TextView
+                        android:id="@+id/txdonate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bantu_donasi"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/imglearn"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_learn_white"/>
+
+                    <TextView
+                        android:id="@+id/txlearn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bantu_belajar"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/imgwork"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_work_white"/>
+
+                    <TextView
+                        android:id="@+id/txwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bantu_kerja"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
