@@ -42,30 +42,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/search"
-                android:scrollIndicators="none"
-                tools:targetApi="m">
+                android:scrollbars="none">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
             <androidx.cardview.widget.CardView
                 android:id="@+id/slideimage1"
-                android:layout_width="350dp"
-                android:layout_height="200dp"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
                 android:layout_margin="20dp"
                 app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="#00CCB0"/>
                     <androidx.cardview.widget.CardView
                         android:id="@+id/slideimage2"
-                        android:layout_width="350dp"
-                        android:layout_height="200dp"
+                        android:layout_width="300dp"
+                        android:layout_height="180dp"
                         android:layout_margin="20dp"
                         app:cardCornerRadius="20dp"
                         app:cardBackgroundColor="#00CCB0"/>
                     <androidx.cardview.widget.CardView
                         android:id="@+id/slideimage3"
-                        android:layout_width="350dp"
-                        android:layout_height="200dp"
+                        android:layout_width="300dp"
+                        android:layout_height="180dp"
                         android:layout_margin="20dp"
                         app:cardCornerRadius="20dp"
                         app:cardBackgroundColor="#00CCB0"/>
@@ -88,8 +87,8 @@
 
                 <ImageView
                     android:id="@+id/imgdonate"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
                     android:src="@drawable/ic_donate_white"/>
 
                     <TextView
@@ -99,7 +98,7 @@
                         android:text="@string/bantu_donasi"
                         android:padding="5dp"
                         android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:fontFamily="@font/poppins_medium" />
@@ -112,8 +111,8 @@
 
                     <ImageView
                         android:id="@+id/imglearn"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:src="@drawable/ic_learn_white"/>
 
                     <TextView
@@ -123,7 +122,7 @@
                         android:text="@string/bantu_belajar"
                         android:padding="5dp"
                         android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:fontFamily="@font/poppins_medium" />
@@ -136,8 +135,8 @@
 
                     <ImageView
                         android:id="@+id/imgwork"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:src="@drawable/ic_work_white"/>
 
                     <TextView
@@ -147,7 +146,7 @@
                         android:text="@string/bantu_kerja"
                         android:padding="5dp"
                         android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:fontFamily="@font/poppins_medium" />

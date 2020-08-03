@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".donasi.DonasiActivity"></activity>
+        <activity android:name=".donasi.VerifUserDonasiActivity" />
+        <activity android:name=".donasi.FormDonasi2Activity" />
+        <activity android:name=".kerja.FormKandidatActivity" />
+        <activity android:name=".kerja.FormLowonganActivity" />
+        <activity android:name=".donasi.FormDonasiActivity" />
+        <activity android:name=".kerja.KerjaActivity" />
+        <activity android:name=".belajar.BelajarActivity" />
+        <activity android:name=".donasi.DonasiActivity" />
         <activity android:name=".verification.VerifOtpActivity" />
         <activity android:name=".verification.NoPhoneActivity" />
         <activity
